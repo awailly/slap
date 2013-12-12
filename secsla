@@ -1,0 +1,23 @@
+sla data {
+    backup VM every day
+    verify backups every week
+    check backups with antivirus every week
+}
+
+sla networking {
+    refuse network changes
+    refuse API changes
+}
+
+sla system {
+    keep firewall logs for 10 days
+    disable proxy logs
+    disable server logs
+    disable DHCP logs
+    disable client logs
+}
+
+sla physical {
+    need alimentation redundant
+    need servers > 2
+}
